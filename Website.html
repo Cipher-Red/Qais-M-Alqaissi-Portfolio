@@ -1,0 +1,368 @@
+<!doctype html>
+
+<html>
+<style>
+
+<!--Glitch 1-->
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  background: black;
+  --color: #FAFAFA;
+    background-image:  linear-gradient(to right ,#00FFFF ,#FFC72C,#EF0107, #000000 20%);
+
+}
+
+html, body {
+ 
+  font-family: Arial;
+  height:3000px;
+  
+}
+
+body {
+ 
+  background: var(--background);
+  
+}
+
+.container {
+  color: var(--color);
+  font-size: 0.7rem;
+  display: flex;
+  flex-direction: column;
+	
+}
+
+.right {
+  text-align: right;
+  width: 100%;
+}
+
+.stack {
+  display: grid;
+  grid-template-rows: 1fr; 
+}
+
+.stack span {
+  font-weight: bold;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  font-size: 3rem;
+  --stack-height: calc(100% / var(--stacks) - 1px);
+  --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
+  --clip-top: calc(var(--stack-height) * var(--index));
+  --clip-bottom: calc(var(--stack-height) * var(--inverse-index));
+  clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
+  animation: stack 340ms cubic-bezier(.46,.29,0,1.24) 1 backwards calc(var(--index) * 120ms), glitch 2s ease infinite 2s alternate-reverse;
+}
+
+.stack span:nth-child(odd) { --glitch-translate: 8px; }
+.stack span:nth-child(even) { --glitch-translate: -8px; }
+
+@keyframes stack {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+    text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+  };
+  60% {
+    opacity: 0.5;
+    transform: translateX(50%);
+  }
+  80% {
+    transform: none;
+    opacity: 1;
+    text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+    transform: translate(var(--glitch-translate));
+  }
+  2% {
+    text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+  }
+  4%, 100% {  text-shadow: none; transform: none; }
+}
+
+<!--Glitch 1-->
+
+
+
+<!--Test-->
+
+p {
+	text-color: #232323;
+}
+
+.glitch {
+	font: {
+		size: 8.125em;
+		family: 'Raleway', sans-serif;
+		weight: 700;
+	}
+	text-decoration: none;
+	text-transform: none;
+	position: absolute;
+	<!--position-->
+	
+	<!--position-->
+	transform: translate(-50%, -50%);
+	margin: 0;
+	color: #fff;
+	letter-spacing: 5px;
+	
+	&:before, &:after {
+		display: block;
+		content: attr(data-glitch);
+		text-transform: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		opacity: .8;
+	} &:after {
+		color: #f0f;
+		z-index: -2;
+	} &:before {
+		color: #0ff;
+		z-index: -1;
+	}
+	&:hover {
+		&:before {
+			animation: glitch1 .3s cubic-bezier(.25, .46, .45, .94) both 5
+		}
+		&:after {
+			animation: glitch1 .3s cubic-bezier(.25, .46, .45, .94) reverse both 5
+		}
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.glitch {
+		font-size: 2em;
+	}
+}
+
+
+@keyframes glitch1 {
+	0% {
+		transform: translate(0)
+	}
+	20% {
+		transform: translate(-5px, 5px)
+	}
+	40% {
+		transform: translate(-5px, -5px)
+	}
+	60% {
+		transform: translate(5px, 5px)
+	}
+	80% {
+		transform: translate(5px, -5px)
+	}
+	to {
+		transform: translate(0)
+	}
+}
+
+a{
+text-decoration:none;
+}
+
+p{
+color:white;
+
+}
+
+<!--Test-->
+
+
+
+<!--time-->
+
+
+
+
+</style>
+
+
+
+<script>
+
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+
+
+
+</script>
+
+
+
+
+
+<head>
+
+<title> Qais M.Alqaissi </title>
+
+</head>
+
+
+
+
+<body onload="startTime()">
+
+
+
+<!--Cipher-->
+<section>
+<center><div class="container">
+  
+  <div class="stack" style="--stacks: 3;">
+    <span style="--index: 0;">Cipher</span>
+    <span style="--index: 1;">Cipher</span>
+    <span style="--index: 2;">Cipher</span>
+  </div>
+</div>
+</center>
+</section>
+<!--Cipher-->
+
+ <!--Time-->
+ <section>
+<div id="txt" style="color:white; position: absolute; right:1%" ></div>
+ </section>
+ <!--Time-->
+
+<!--NAV BAR-->
+<section>
+ <a href="#" class="glitch" data-glitch="Home" >Home</a>
+ 
+ <br>
+ <br>
+ 
+ <a href="#GTKM" class="glitch" data-glitch="Get To Know Me">Get To Know Me</a>
+ 
+ <br>
+ <br>
+ 
+ <a href="#Cer" class="glitch" data-glitch="Certificates & Experience" >Certificates & Experience</a>
+ 
+ <br>
+ <br>
+ <a href="#Soc" class="glitch" data-glitch="Social & Contact Info" >Social & Contact Info</a>
+ </section>
+<!--NAV BAR-->
+
+<!--Name-->
+<section>
+<center><p style="font-size:40px; color:white; position:absolute; right:28%; top:53%; ">CyberSecurity Specialist</p></center>
+<center><p  style="font-size:100px; color:white; position:absolute; right:33%; top:35%;">Qais Alqaissi.</p></center>
+</section>
+ <!--Name-->
+ 
+<!--Music <center><div style="postion:relative; right:20%;"><audio controls loop src="C:\Users\qaisa\Desktop\Work\Website\Test.mp3" ></audio></div></center> -->
+<br>
+
+<!--About Section-->
+<section>
+<div><table style="position:absolute; right:35%; width:500px;  padding:30px; top:100%" id="GTKM"><th style="color:white"><h1>A CyberSecurity Student at Amman Arab University, I strive to better myself in my field and keep myself upto date with
+ developments in techniques and cyberattacks that are occurring worldwide and always ready to learn new things.<h1></th>
+ </table></div>
+ </section>
+<!--About Section-->
+
+<!--Certificate-->
+<section>
+<center><ul style="color:white; position:absolute; right:32%; width:550px;  padding:30px; top:200%; font-size:0.2in; " id="Cer">
+
+<center><p style="font-size:0.4in;  position:relative;">Certificates</p></center>
+
+<center><a href="https://www.hackerrank.com/certificates/0df80d7ef728" style="text-decoration:none; color:inherit; " >HackerRank SQL (Basic) Certificate.</a></center>
+<br>
+<center><a href="#" style="text-decoration:none; color:inherit;" >The Hope international certificate of fundamentals in Cyber security.</a></center>
+<br>
+<center><a href="#" style="text-decoration:none; color:inherit;">Certificate of participation in AAU-PC 2022.</a></center>
+<br>
+<center><a href="#" style="text-decoration:none; color:inherit;">Certificate of participation in AAU-PC 2024.</a></center>
+<br>
+<center><a href="#" style="text-decoration:none; color:inherit;">Certificate of participation in AAU-CTF first edition 2023.</a></center>
+<br>
+<center><a href="#" style="text-decoration:none; color:inherit;">Certificate of participation in AAU-CTF second edition 2024.</a></center>
+<br>
+<center><a href="#" style="text-decoration:none; color:inherit;">Certificate of completion of front end development – HTML.</a></center>
+<br>
+<center><a href="https://coursera.org/share/4e70062138dd400fbd3501cde1ba3a21" style="text-decoration:none; color:inherit;">Microsoft Certificate of completion of Introduction to Computers and Operating Systems and Security.</a></center>
+<br>
+<center><a href="#" style="text-decoration:none; color:inherit;">Certificate Of exploration of the Meta-verse.</a></center>
+<br>
+<center><a href="#" style="text-decoration:none; color:inherit;">Certificate Of Attendance for Crafting the Cybersecurity Road-map of Tomorrow.</a></center>
+<br>
+<center><a href="https://coursera.org/share/c922d28c820e01a3f31f5092b6824894" style="text-decoration:none; color:inherit;">Coursera Certificate of completion of Investment Risk Management.</a></center>
+<br>
+<center><a href="https://coursera.org/share/25fe995f8fd577113dc13ad3595f4211" style="text-decoration:none; color:inherit;">Coursera Certificate of completion of Introduction to Data Analysis Using Microsoft Excel.</a></center>
+
+</ul></center>
+</section>
+<!--Certificate-->
+
+<!--Experience-->
+<section>
+<center><ul style="color:white; position:absolute; right:32%; width:550px;  padding:30px; top:300%; font-size:0.2in; " id="Cer">
+
+<center><p style="font-size:0.4in;  position:relative;">Experience</p></center>
+
+<center><p>CSC Beyond <p style="font-family:timesnewroman"> Telemarketer <a style="font-size:0.15in;">April 2023 ~ August 2023</a></p></p>
+
+<center><p>Amazon <p style="font-family:timesnewroman"> Customer Support Associate <a style="font-size:0.15in;">August 2023 ~ January 2024</a></p></p>
+
+</ul>
+</section>
+<!--Experience-->
+
+<!--Social Media and contact information-->
+
+<img src="https://www.svgrepo.com/show/424920/protonmail-logo-privacy-3.svg" style="width:1.2%; position:absolute; left:35.1%; top:350.1%;"></img><a href="mailto: Qipher09@proton.me" id="Soc" style="text-decoration:none; color:white; position:absolute; left:36.3%; top:350.4%;"> ~ Qipher09@proton.me</a>
+
+<img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" style="width:1.2%; position:absolute; left:46.2%; top:350%;"></img><a href="https://www.linkedin.com/in/qais-alqaissi-1b9295238" style="text-decoration:none; color:white; position:absolute; left:47.5%; top:350.4%;"> ~ Linkedin Account</a>
+
+<img src="https://mailmeteor.com/logos/assets/PNG/Gmail_Logo_512px.png" style="width:1%; position:absolute; left:56%; top:350.2%;"></img><a href="mailto: qalqaissiw@gmail.com" style="text-decoration:none; color:white; position:absolute; left:57.2%; top:350.2%;"> ~ Qalqaissiw@gmail.com</a>
+<!--Social Media and contact information-->
+
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>

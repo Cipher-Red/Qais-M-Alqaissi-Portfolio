@@ -6,139 +6,232 @@
   <meta name="description" content="Qais Alqaissi's professional portfolio showcasing skills, certifications, and experience in cybersecurity.">
   <title>Qais M. Alqaissi - Cybersecurity Portfolio</title>
   <style>
-  * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #00FFFF, #FFC72C, #EF0107, #000000);
-      color: #FAFAFA;
-      line-height: 1.6;
-    }
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #00FFFF, #FFC72C, #EF0107, #000000);
+    color: #FAFAFA;
+    line-height: 1.6;
+}
 
-    header {
-      background: rgba(0, 0, 0, 0.8);
-      padding: 1rem;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+header nav a {
+    color: #FAFAFA;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 2rem;
+    margin: auto;
+    max-width: 1000px;
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    font-size: 1.2rem;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    flex: 1 1 300px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card.featured {
+    border: 3px solid #00FFFF;
+    background: rgba(0, 0, 0, 0.9);
+    font-weight: bold;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card a {
+    color: #00FFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer .badges {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+footer .badges img {
+    width: 100px;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
     header h1 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
+        font-size: 1.5rem;
     }
 
-    header nav a {
-      color: #FAFAFA;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-weight: bold;
-      font-size: 1rem;
-    }
-
-    header nav a:hover {
-      text-decoration: underline;
-    }
-
-    section {
-      padding: 2rem;
-      margin: auto;
-      max-width: 1000px;
-    }
-
-    .intro {
-      text-align: center;
+    header nav {
+        flex-direction: column;
+        gap: 0.5rem;
     }
 
     .intro h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .intro p {
-      font-size: 1.2rem;
+        font-size: 2rem;
     }
 
     .cards {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: center;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
     }
 
     .card {
-      background: rgba(0, 0, 0, 0.7);
-      padding: 1rem;
-      border-radius: 0.5rem;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      text-align: center;
-      flex: 1 1 300px;
-    }
-
-    .card.featured {
-      border: 3px solid #00FFFF;
-      background: rgba(0, 0, 0, 0.9);
-      font-weight: bold;
-    }
-
-    .card h3 {
-      font-size: 1.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .card a {
-      color: #00FFFF;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    footer {
-      background: rgba(0, 0, 0, 0.9);
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-
-    footer .badges {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      margin-top: 1rem;
+        flex: 1 1 90%;
+        margin: 0.5rem;
     }
 
     footer .badges img {
-      width: 100px;
-      height: auto;
-      border-radius: 0.5rem;
+        width: 80px;
     }
 
     footer p {
-      font-size: 0.9rem;
-      margin-top: 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2rem;
     }
 
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.5rem;
-      }
+    .intro h2 {
+        font-size: 1.8rem;
+    }
 
-      .intro h2 {
-        font-size: 2rem;
-      }
+    .intro p {
+        font-size: 1rem;
+    }
 
-      .card {
+    .card {
         flex: 1 1 100%;
-      }
-
-      footer .badges img {
-        width: 80px;
-      }
+        margin: 0.5rem 0;
     }
+
+    .card h3 {
+        font-size: 1.2rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+
+    footer p {
+        font-size: 0.7rem;
+    }
+}
+footer .badges {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap; /* Allows the badges to wrap on smaller screens */
+}
+
+footer .badges img {
+    width: 80px;  /* Fixed width for all screen sizes */
+    height: 80px; /* Ensures badges maintain the same height */
+    border-radius: 0.5rem;
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+footer .badges img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+@media (max-width: 768px) {
+    footer .badges {
+        justify-content: center;
+        gap: 0.5rem; /* Adjusted gap for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    footer .badges {
+        justify-content: center;
+        gap: 0.3rem; /* Further reduced gap for mobile screens */
+    }
+}
+
+
+	
+	
   </style>
 </head>
 <body>
@@ -330,6 +423,51 @@ communication skills and the ability to thrive in high-pressure environments. </
       </div>
     </div>
   </section>
+  
+<section id="cybersecurity-portfolio">
+  <h2>Cybersecurity Portfolio</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Ghaida Al Qaissi's Portfolio</h3>
+      <p>
+        A professional portfolio website created for a client, showcasing their work and skills in a visually appealing and functional design.
+      </p>
+      <p>
+        Connected to <strong>UptimeRobot</strong> for monitoring and ensuring high availability, with HTTPS coupled with SSL encryption to ensure privacy, demonstrating hands-on cybersecurity skills in real-world applications.
+      </p>
+      <a
+        href="https://ghaidaalqaissi.netlify.app"
+        target="_blank"
+        class="inline-block text-blue-400 font-medium hover:underline"
+      >
+        Visit Website
+      </a>
+    </div>
+    <div class="card">
+      <h3>Alanabtawi Perfume Website</h3>
+      <p>
+        A secure login page created for employees, connected to <strong>Firestore</strong> with security rules implemented.
+      </p>
+      <p>
+        The website is protected by <strong>Content Security Policy (CSP)</strong>, <strong>HTTPS</strong>, and <strong>SSL certificates</strong> through Netlify. Additionally, the newsletter form is secure from <strong>XSS</strong> and <strong>SQL injection</strong> attacks.
+      </p>
+      <p>
+        The website has been tested with comprehensive test cases and documented with a detailed security policy to ensure its robustness.
+      </p>
+      <a
+        href="https://alanabtawi-perfume.netlify.app"
+        target="_blank"
+        class="inline-block text-blue-400 font-medium hover:underline"
+      >
+        Visit Website
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
 
   <section id="experience">
     <h2>Experience</h2>
@@ -349,6 +487,11 @@ communication skills and the ability to thrive in high-pressure environments. </
         <p>FiberTech</p>
         <p>December 2024 - Present</p>
       </div>
+	   <div class="card">
+        <h3>Freelance Web Security Developer and Analyst</h3>
+        <p>Freelance</p>
+        <p>November 2024 - Present</p>
+      </div>
     </div>
   </section>
 
@@ -361,7 +504,7 @@ communication skills and the ability to thrive in high-pressure environments. </
    <footer>
     <div class="badges">
       <a href="https://www.credly.com/badges/728b9a3a-cfd9-477a-9bda-229ad00b4704/public_url"><img src="C/isc2-candidate.png" alt="ISC2 CC Badge"></a>
-      <a href="C/Blue Team Junior Analyst Pathway Bundle-btja.pdf"><img style="width:130px;" src="C/BlueTeamBadge.png" alt="BTJA Badge"></a>
+      <a href="C/Blue Team Junior Analyst Pathway Bundle-btja.pdf"><img style="width:90%" src="C/BlueTeamBadge.png" alt="BTJA Badge"></a>
       <a href="https://www.credly.com/badges/775e2d8b-e432-4d2d-9aed-3a346c63aa6d/public_url"><img src="C/introduction-to-the-threat-landscape-2-0.png" alt="Fortinet NSE Badge"></a>
 	  <a href="https://www.credly.com/badges/1f6e1da4-7ccd-42c5-9f7e-7d87ccba6c45/public_url"><img src="C/getting-started-in-cybersecurity-2-0.png" alt=""></a>
 	  <a href="https://www.credly.com/badges/083f90eb-7432-47bc-92a6-7c3d48f667ef/public_url"><img src="C/fortinet-certified-fundamentals-cybersecurity (1).png" alt=""></a>

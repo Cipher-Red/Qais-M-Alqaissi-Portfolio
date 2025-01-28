@@ -4,234 +4,230 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Qais Alqaissi's professional portfolio showcasing skills, certifications, and experience in cybersecurity.">
+  <meta property="og:title" content="Qais M. Alqaissi - Cybersecurity Portfolio">
+  <meta property="og:description" content="Aspiring Cybersecurity Specialist with hands-on experience in customer support and a strong academic foundation in Cybersecurity.">
+  <meta property="og:image" content="https://yourwebsite.com/path/to/image.jpg">
+  <meta property="og:url" content="https://yourwebsite.com">
   <title>Qais M. Alqaissi - Cybersecurity Portfolio</title>
   <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #00FFFF, #FFC72C, #EF0107, #000000);
-    color: #FAFAFA;
-    line-height: 1.6;
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-header {
-    background: rgba(0, 0, 0, 0.8);
-    padding: 1rem;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #00FFFF, #FFC72C, #EF0107, #000000);
+      color: #FAFAFA;
+      line-height: 1.6;
+    }
 
-header h1 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-}
+    header {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
-header nav {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-header nav a {
-    color: #FAFAFA;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-header nav a:hover {
-    text-decoration: underline;
-}
-
-section {
-    padding: 2rem;
-    margin: auto;
-    max-width: 1000px;
-}
-
-.intro {
-    text-align: center;
-}
-
-.intro h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.intro p {
-    font-size: 1.2rem;
-}
-
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-}
-
-.card {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 1rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    flex: 1 1 300px;
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card.featured {
-    border: 3px solid #00FFFF;
-    background: rgba(0, 0, 0, 0.9);
-    font-weight: bold;
-}
-
-.card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.card a {
-    color: #00FFFF;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer {
-    background: rgba(0, 0, 0, 0.9);
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-footer .badges {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
-footer .badges img {
-    width: 100px;
-    height: auto;
-    border-radius: 0.5rem;
-}
-
-footer p {
-    font-size: 0.9rem;
-    margin-top: 1rem;
-}
-
-@media (max-width: 768px) {
     header h1 {
-        font-size: 1.5rem;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
     }
 
     header nav {
-        flex-direction: column;
-        gap: 0.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    header nav a {
+      color: #FAFAFA;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    header nav a:hover {
+      color: #00FFFF;
+      
+    }
+
+    section {
+      padding: 2rem;
+      margin: auto;
+      max-width: 1000px;
+    }
+
+    .intro {
+      text-align: center;
     }
 
     .intro h2 {
-        font-size: 2rem;
-    }
-
-    .cards {
-        flex-direction: column;
-        gap: 1.5rem;
-        align-items: center;
-    }
-
-    .card {
-        flex: 1 1 90%;
-        margin: 0.5rem;
-    }
-
-    footer .badges img {
-        width: 80px;
-    }
-
-    footer p {
-        font-size: 0.8rem;
-    }
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.2rem;
-    }
-
-    .intro h2 {
-        font-size: 1.8rem;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
     }
 
     .intro p {
-        font-size: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
     }
 
     .card {
-        flex: 1 1 100%;
-        margin: 0.5rem 0;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 1rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      flex: 1 1 300px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card.featured {
+      border: 3px solid #00FFFF;
+      background: rgba(0, 0, 0, 0.9);
+      font-weight: bold;
     }
 
     .card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card a {
+      color: #00FFFF;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .card a:hover {
+      color: #FFC72C;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.9);
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    footer .badges {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+
+    footer .badges img {
+      width: 80px;
+      height: 80px;
+      border-radius: 0.5rem;
+      transition: transform 0.3s;
+    }
+
+    footer .badges img:hover {
+      transform: scale(1.1);
+    }
+
+    footer .social-links {
+      margin-top: 1rem;
+    }
+
+    footer .social-links a {
+      color: #FAFAFA;
+      text-decoration: none;
+      margin: 0 0.5rem;
+      transition: color 0.3s;
+    }
+
+    footer .social-links a:hover {
+      color: #00FFFF;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      header nav {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .intro h2 {
+        font-size: 2rem;
+      }
+
+      .cards {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+      }
+
+      .card {
+        flex: 1 1 90%;
+        margin: 0.5rem;
+      }
+
+      footer .badges img {
+        width: 60px;
+        height: 60px;
+      }
+
+      footer p {
+        font-size: 0.8rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
         font-size: 1.2rem;
-    }
+      }
 
-    .card p {
+      .intro h2 {
+        font-size: 1.8rem;
+      }
+
+      .intro p {
+        font-size: 1rem;
+      }
+
+      .card {
+        flex: 1 1 100%;
+        margin: 0.5rem 0;
+      }
+
+      .card h3 {
+        font-size: 1.2rem;
+      }
+
+      .card p {
         font-size: 0.9rem;
-    }
+      }
 
-    footer p {
+      footer p {
         font-size: 0.7rem;
+      }
     }
-}
-footer .badges {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
-    flex-wrap: wrap; /* Allows the badges to wrap on smaller screens */
-}
-
-footer .badges img {
-    width: 80px;  /* Fixed width for all screen sizes */
-    height: 80px; /* Ensures badges maintain the same height */
-    border-radius: 0.5rem;
-    transition: transform 0.3s; /* Smooth hover effect */
-}
-
-footer .badges img:hover {
-    transform: scale(1.1); /* Slight zoom on hover */
-}
-
-@media (max-width: 768px) {
-    footer .badges {
-        justify-content: center;
-        gap: 0.5rem; /* Adjusted gap for smaller screens */
-    }
-}
-
-@media (max-width: 480px) {
-    footer .badges {
-        justify-content: center;
-        gap: 0.3rem; /* Further reduced gap for mobile screens */
-    }
-}
-
-
-	
-	
   </style>
 </head>
 <body>
@@ -247,255 +243,217 @@ footer .badges img:hover {
 
   <section id="about" class="intro">
     <h2>Cybersecurity Specialist</h2>
-    <p>Aspiring Cybersecurity Specialist with hands-on experience in customer support and a strong academic
-foundation in Cybersecurity. Certified by globally recognized organizations, I bring technical skills and a
-proven passion for problem-solving and digital defense. Adept at identifying vulnerabilities using advanced
-tools, analyzing threats, and contributing to secure systems and networks. Known for exceptional
-communication skills and the ability to thrive in high-pressure environments. </p>
+    <p>
+      Aspiring Cybersecurity Specialist with hands-on experience in customer support and a strong academic foundation in Cybersecurity. Certified by globally recognized organizations, I bring technical skills and a proven passion for problem-solving and digital defense. Adept at identifying vulnerabilities using advanced tools, analyzing threats, and contributing to secure systems and networks. Known for exceptional communication skills and the ability to thrive in high-pressure environments.
+    </p>
   </section>
 
   <section id="certificates">
     <h2>Certificates</h2>
     <div class="cards">
-	
-	<div class="card featured">
+      <div class="card featured">
         <h3>ISC2 Certified in Cybersecurity (CC)</h3>
-        <a href="C/CC.pdf" target="_blank">View Certificate</a>
+        <a href="C/CC.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
       </div>
       <div class="card featured">
         <h3>Security Blue Team Junior Analyst (BTJA)</h3>
-        <a href="C/Blue Team Junior Analyst Pathway Bundle-btja.pdf" target="_blank">View Certificate</a>
+        <a href="C/Blue Team Junior Analyst Pathway Bundle-btja.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
       </div>
       <div class="card featured">
         <h3>Fortinet NSE 1 & NSE 2</h3>
-        <a href="C/Fortinet_Certified_Fundamentals_in_Cybersecurity.pdf" target="_blank">View Certificate</a>
+        <a href="C/Fortinet_Certified_Fundamentals_in_Cybersecurity.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
       </div>
-	
-	      <div class="card">
+      <div class="card">
         <h3>The Hope Cyber Security Fundamentals</h3>
-        <a href="C/Qais Mohammad Alqaissi CSF.pdf" target="_blank">View Certificate</a>
+        <a href="C/Qais Mohammad Alqaissi CSF.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
       </div>
       <div class="card">
         <h3>HackerRank SQL (Basic)</h3>
-        <a href="C/SQL Basic Certificate.png" target="_blank">View Certificate</a>
-      </div>
-        <div class="card">
-        <h3>Great learning Academy Front End Development</h3>
-        <a href="C/Qais Alqaissi HTML front end.pdf" target="_blank">View Certificate</a>
-      </div>
-	        <div class="card">
-        <h3>Microsoft Introduction to Computers and Operating Systems and Security</h3>
-        <a href="C/Coursera Certificate in intro to Computers and OS and Security.pdf" target="_blank">View Certificate</a>
-      </div>
-	        <div class="card">
-        <h3>Amman Arab University Exploring The World of Metaverse</h3>
-        <a href="C/World of metavers.pdf" target="_blank">View Certificate</a>
-      </div>
-	        <div class="card">
-        <h3>Digital Excel Crafting the Cybersecurity Roadmap of Tomorrow</h3>
-        <a href="C/Qais Alqaissi CSRM.pdf" target="_blank">View Certificate</a>
-      </div>
-	        <div class="card">
-        <h3>Amman Arab University AI In Jobs</h3>
-        <a href="C/Ai in Jobs.pdf" target="_blank">View Certificate</a>
-      </div>
-	        <div class="card">
-        <h3>Coursera Investment Risk Management</h3>
-        <a href="C/Coursera Investment Risk Managment.pdf" target="_blank">View Certificate</a>
-      </div>
-	        <div class="card">
-        <h3>Introduction to Data Analysis using Microsoft Excel</h3>
-        <a href="C/Intro to data Analysis Using Microsft Excel.pdf" target="_blank">View Certificate</a>
-      </div>
-	        <div class="card">
-        <h3>National Cyber Security Center of Jordan CTF Training</h3>
-        <a href="C/Qais Mohammad Alqaissi  NCSC.pdf" target="_blank">View Certificate</a>
-      </div>
-	        <div class="card">
-        <h3>The Hope Project Managment Professional</h3>
-        <a href="C/PMP & Digital marketing Event-part-2.pdf" target="_blank">View Certificate</a>
-      </div>
-	        <div class="card">
-        <h3>Microsoft Introduction to Networking and Cloud Computing</h3>
-        <a href="C/Microsoft Certificate for intro to networking and cloud computing.pdf" target="_blank">View Certificate</a>
-      </div>
-	  
-      <!-- End -->
-	  
-	        <div class="card">
-        <h3>OPSWAT Introduction To Critical Infrastructure Protection</h3>
-        <a href="C/introduction_to_cip.png" target="_blank">View Certificate</a>
+        <a href="C/SQL Basic Certificate.png" target="_blank" rel="noopener noreferrer">View Certificate</a>
       </div>
       <div class="card">
-        <h3>EC-Council Introduction to cloud computing</h3>
-        <a href="C/EC-Council Certification intro to cloud computing.png" target="_blank">View Certificate</a>
-      </div>
-        <div class="card">
         <h3>Great learning Academy Front End Development</h3>
-        <a href="C/Qais Alqaissi HTML front end.pdf" target="_blank">View Certificate</a>
+        <a href="C/Qais Alqaissi HTML front end.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
       </div>
-	        <div class="card">
+      <div class="card">
+        <h3>Microsoft Introduction to Computers and Operating Systems and Security</h3>
+        <a href="C/Coursera Certificate in intro to Computers and OS and Security.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+      </div>
+      <div class="card">
+        <h3>Amman Arab University Exploring The World of Metaverse</h3>
+        <a href="C/World of metavers.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+      </div>
+      <div class="card">
+        <h3>Digital Excel Crafting the Cybersecurity Roadmap of Tomorrow</h3>
+        <a href="C/Qais Alqaissi CSRM.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+      </div>
+      <div class="card">
+        <h3>Amman Arab University AI In Jobs</h3>
+        <a href="C/Ai in Jobs.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+      </div>
+      <div class="card">
+        <h3>Coursera Investment Risk Management</h3>
+        <a href="C/Coursera Investment Risk Managment.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+      </div>
+      <div class="card">
+        <h3>Introduction to Data Analysis using Microsoft Excel</h3>
+        <a href="C/Intro to data Analysis Using Microsft Excel.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+      </div>
+      <div class="card">
+        <h3>National Cyber Security Center of Jordan CTF Training</h3>
+        <a href="C/Qais Mohammad Alqaissi  NCSC.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+      </div>
+      <div class="card">
+        <h3>The Hope Project Management Professional</h3>
+        <a href="C/PMP & Digital marketing Event-part-2.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+      </div>
+      <div class="card">
+        <h3>Microsoft Introduction to Networking and Cloud Computing</h3>
+        <a href="C/Microsoft Certificate for intro to networking and cloud computing.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+      </div>
+      <div class="card">
+        <h3>OPSWAT Introduction To Critical Infrastructure Protection</h3>
+        <a href="C/introduction_to_cip.png" target="_blank" rel="noopener noreferrer">View Certificate</a>
+      </div>
+      <div class="card">
+        <h3>EC-Council Introduction to Cloud Computing</h3>
+        <a href="C/EC-Council Certification intro to cloud computing.png" target="_blank" rel="noopener noreferrer">View Certificate</a>
+      </div>
+      <div class="card">
         <h3>The Hope PLC And Classic Control</h3>
-        <a href="C/PLC-250.pdf" target="_blank">View Certificate</a>
+        <a href="C/PLC-250.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
       </div>
-	        <div class="card">
+      <div class="card">
         <h3>Security Blue Team Introduction to OSINT</h3>
-        <a href="C/Introduction to OSINT-course.pdf" target="_blank">View Certificate</a>
+        <a href="C/Introduction to OSINT-course.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
       </div>
-	        <div class="card">
+      <div class="card">
         <h3>ISC2 CC Domain 1: Security Principles</h3>
-        <a href="C/ec4d538b-e46b-4804-9af9-3592601a5780.pdf" target="_blank">View Certificate</a>
+        <a href="C/ec4d538b-e46b-4804-9af9-3592601a5780.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
       </div>
-	        <div class="card">
+      <div class="card">
         <h3>ISC2 CC Domain 2: Incident Response, Business Continuity and Disaster Recovery Concepts</h3>
-        <a href="C/dee9caec-1fd9-486e-a036-249571397a4e.pdf" target="_blank">View Certificate</a>
+        <a href="C/dee9caec-1fd9-486e-a036-249571397a4e.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
       </div>
-	        <div class="card">
+      <div class="card">
         <h3>ISC2 CC Domain 3: Access Control Concepts</h3>
-        <a href="C/aaeee0f9-4a11-42cd-abd8-1bd694359544.pdf" target="_blank">View Certificate</a>
+        <a href="C/aaeee0f9-4a11-42cd-abd8-1bd694359544.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
       </div>
-	        <div class="card">
+      <div class="card">
         <h3>ISC2 CC Domain 4: Network Security</h3>
-        <a href="C/6a30060b-905f-4af4-ba12-d80a3a791a51.pdf" target="_blank">View Certificate</a>
+        <a href="C/6a30060b-905f-4af4-ba12-d80a3a791a51.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
       </div>
-	        <div class="card">
+      <div class="card">
         <h3>ISC2 CC Domain 5: Security Operations</h3>
-        <a href="C/7442311e-0aef-4ede-86e9-e671bcaa8ce2.pdf" target="_blank">View Certificate</a>
+        <a href="C/7442311e-0aef-4ede-86e9-e671bcaa8ce2.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
       </div>
-	        <div class="card">
-        <h3>ISC2 CCCourse Conclusion & Final Assessment</h3>
-        <a href="C/6635b1f0-43a1-482e-a30d-d888c3984d16.pdf" target="_blank">View Certificate</a>
+      <div class="card">
+        <h3>ISC2 CC Course Conclusion & Final Assessment</h3>
+        <a href="C/6635b1f0-43a1-482e-a30d-d888c3984d16.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
       </div>
-	  
-	       <!-- End -->
-	  
-	        <div class="card">
+      <div class="card">
         <h3>Security Blue Team Introduction to Digital Forensics</h3>
-        <a href="C/Introduction to Digital Forensics-course.pdf" target="_blank">View Certificate</a>
+        <a href="C/Introduction to Digital Forensics-course.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
       </div>
       <div class="card">
         <h3>Security Blue Team Introduction to PowerShell</h3>
-        <a href="C/Introduction to PowerShell-course.pdf" target="_blank">View Certificate</a>
+        <a href="C/Introduction to PowerShell-course.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
       </div>
-        <div class="card">
+      <div class="card">
         <h3>EC-Council Cybersecurity for Businesses</h3>
-        <a href="C/Cybersecurity for Businesses - The Fundamental Edition.png" target="_blank">View Certificate</a>
+        <a href="C/Cybersecurity for Businesses - The Fundamental Edition.png" target="_blank" rel="noopener noreferrer">View Certificate</a>
       </div>
-	        <div class="card">
-        <h3>Security Blue Team Introduction to Vulnerability Management-course</h3>
-        <a href="C/Introduction to Vulnerability Management-course.pdf" target="_blank">View Certificate</a>
+      <div class="card">
+        <h3>Security Blue Team Introduction to Vulnerability Management</h3>
+        <a href="C/Introduction to Vulnerability Management-course.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
       </div>
-	        <div class="card">
+      <div class="card">
         <h3>Security Blue Team Introduction to Threat Hunting</h3>
-        <a href="C/Introduction to Threat Hunting-course.pdf" target="_blank">View Certificate</a>
+        <a href="C/Introduction to Threat Hunting-course.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
       </div>
-	        <div class="card">
+      <div class="card">
         <h3>Security Blue Team Introduction to Dark Web Operations</h3>
-        <a href="C/Introduction to Dark Web Operations.pdf" target="_blank">View Certificate</a>
+        <a href="C/Introduction to Dark Web Operations.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
       </div>
-	        <div class="card">
+      <div class="card">
         <h3>Security Blue Team Introduction to Network Analysis</h3>
-        <a href="C/Introduction to Network Analysis.pdf" target="_blank">View Certificate</a>
+        <a href="C/Introduction to Network Analysis.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
       </div>
-	
-	        <div class="card">
+      <div class="card">
         <h3>Fortinet NSE 1</h3>
-        <a href="C/FCF - GSC.pdf" target="_blank">View Certificate</a>
+        <a href="C/FCF - GSC.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
       </div>
-	        <div class="card">
+      <div class="card">
         <h3>Fortinet NSE 2</h3>
-        <a href="C/FCF - Introduction to the Threat Landscape 2.0.pdf" target="_blank">View Certificate</a>
+        <a href="C/FCF - Introduction to the Threat Landscape 2.0.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
       </div>
-	        <div class="card">
+      <div class="card">
         <h3>Fortinet Certified Fundamentals in Cybersecurity</h3>
-        <a href="C/Fortinet_Certified_Fundamentals_in_Cybersecurity.pdf" target="_blank">View Certificate</a>
+        <a href="C/Fortinet_Certified_Fundamentals_in_Cybersecurity.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
       </div>
-	  
     </div>
   </section>
-  
-    <section id="research">
+
+  <section id="research">
     <h2>Research & Publications</h2>
     <div class="cards">
       <div class="card">
         <h3>Jamming and Anti-Jamming Techniques on Wireless Networks (2024)</h3>
-        <p>Published on ResearchGate (Dec.2024).This paper explores the vulnerabilities of wireless networks to jamming attacks and evaluates modern antijamming techniques to enhance network resilience. <a href="C/Jamming and Anti Jamming on wirless Networks.pdf" target="_blank">Download Paper</a></p>
+        <p>
+          Published on ResearchGate (Dec. 2024). This paper explores the vulnerabilities of wireless networks to jamming attacks and evaluates modern anti-jamming techniques to enhance network resilience.
+          <a href="C/Jamming and Anti Jamming on wirless Networks.pdf" target="_blank" rel="noopener noreferrer">Download Paper</a>
+        </p>
       </div>
     </div>
   </section>
-  
-<section id="cybersecurity-portfolio">
-  <h2 style="padding-bottom:1%">Cybersecurity Portfolio</h2>
-  
-  <div class="cards">
-    <div class="card">
-      <h3>Ghaida Al Qaissi's Portfolio</h3>
-      <p>
-        A professional portfolio website created for a client, showcasing their work and skills in a visually appealing and functional design.
-      </p>
-      <p>
-        Connected to <strong>UptimeRobot</strong> for monitoring and ensuring high availability, with HTTPS coupled with SSL encryption to ensure privacy, demonstrating hands-on cybersecurity skills in real-world applications.
-      </p>
-      <p>
-        The project is connected to its own <strong>GitHub repository</strong> for pushing new updates and logging information, ensuring continuous improvements and version control.
-      </p>
-      <a
-        href="https://ghaidaalqaissi.netlify.app"
-        target="_blank"
-        class="inline-block text-blue-400 font-medium hover:underline"
-      >
-        Explore the Website
-      </a>
+
+  <section id="cybersecurity-portfolio">
+    <h2>Cybersecurity Portfolio</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Ghaida Al Qaissi's Portfolio</h3>
+        <p>
+          A professional portfolio website created for a client, showcasing their work and skills in a visually appealing and functional design.
+        </p>
+        <p>
+          Connected to <strong>UptimeRobot</strong> for monitoring and ensuring high availability, with HTTPS coupled with SSL encryption to ensure privacy, demonstrating hands-on cybersecurity skills in real-world applications.
+        </p>
+        <p>
+          The project is connected to its own <strong>GitHub repository</strong> for pushing new updates and logging information, ensuring continuous improvements and version control.
+        </p>
+        <a href="https://ghaidaalqaissi.netlify.app" target="_blank" rel="noopener noreferrer">Explore the Website</a>
+      </div>
+      <div class="card">
+        <h3>Alanabtawi Perfume Website</h3>
+        <p>
+          A secure login page created for employees, connected to <strong>Firestore</strong> with security rules implemented.
+        </p>
+        <p>
+          The website is protected by <strong>Content Security Policy (CSP)</strong>, <strong>HTTPS</strong>, and <strong>SSL certificates</strong> through Netlify. Additionally, the newsletter form is secure from <strong>XSS</strong> and <strong>SQL injection</strong> attacks.
+        </p>
+        <p>
+          The website has been tested with comprehensive test cases and documented with a detailed security policy to ensure its robustness.
+        </p>
+        <p>
+          The project is connected to its own <strong>GitHub repository</strong> for pushing new updates and logging information, ensuring efficient version control and ongoing improvements.
+        </p>
+        <a href="https://alanabtawi-perfume.netlify.app" target="_blank" rel="noopener noreferrer">Explore the Website</a>
+      </div>
+      <div class="card">
+        <h3>Noor Jaber's Professional Portfolio</h3>
+        <p>
+          A polished and dynamic portfolio website crafted for a client, effectively showcasing their expertise and achievements in a clean, visually engaging, and user-friendly interface.
+        </p>
+        <p>
+          Integrated with <strong>UptimeRobot</strong> for real-time monitoring, ensuring seamless availability and reliability. Equipped with HTTPS and SSL encryption to safeguard user data, emphasizing practical cybersecurity knowledge and application.
+        </p>
+        <p>
+          The project is managed through its dedicated <strong>GitHub repository</strong>, allowing for smooth version control, easy updates, and ongoing enhancements to maintain a top-tier website.
+        </p>
+        <a href="https://ghaidaalqaissi.netlify.app" target="_blank" rel="noopener noreferrer">Explore the Website</a>
+      </div>
     </div>
-    <div class="card">
-      <h3>Alanabtawi Perfume Website</h3>
-      <p>
-        A secure login page created for employees, connected to <strong>Firestore</strong> with security rules implemented.
-      </p>
-      <p>
-        The website is protected by <strong>Content Security Policy (CSP)</strong>, <strong>HTTPS</strong>, and <strong>SSL certificates</strong> through Netlify. Additionally, the newsletter form is secure from <strong>XSS</strong> and <strong>SQL injection</strong> attacks.
-      </p>
-      <p>
-        The website has been tested with comprehensive test cases and documented with a detailed security policy to ensure its robustness.
-      </p>
-      <p>
-        The project is connected to its own <strong>GitHub repository</strong> for pushing new updates and logging information, ensuring efficient version control and ongoing improvements.
-      </p>
-      <a
-        href="https://alanabtawi-perfume.netlify.app"
-        target="_blank"
-        class="inline-block text-blue-400 font-medium hover:underline"
-      >
-        Explore the Website
-      </a>
-    </div>
-	 <div class="card">
-    <h3>Noor Jaber's Professional Portfolio</h3>
-    <p>
-        A polished and dynamic portfolio website crafted for a client, effectively showcasing their expertise and achievements in a clean, visually engaging, and user-friendly interface.
-    </p>
-    <p>
-        Integrated with <strong>UptimeRobot</strong> for real-time monitoring, ensuring seamless availability and reliability. Equipped with HTTPS and SSL encryption to safeguard user data, emphasizing practical cybersecurity knowledge and application.
-    </p>
-    <p>
-        The project is managed through its dedicated <strong>GitHub repository</strong>, allowing for smooth version control, easy updates, and ongoing enhancements to maintain a top-tier website.
-    </p>
-    <a
-        href="https://noorjaber.netlify.app"
-        target="_blank"
-        class="inline-block text-blue-400 font-medium hover:underline"
-    >
-        Explore the Website
-    </a>
-</div>
-
-  </div>
-</section>
-
-
-
-
-
+  </section>
 
   <section id="experience">
     <h2>Experience</h2>
@@ -510,15 +468,15 @@ communication skills and the ability to thrive in high-pressure environments. </
         <p>Amazon UK</p>
         <p>August 2023 - January 2024</p>
       </div>
-	    <div class="card">
+      <div class="card">
         <h3>Customer Support Intern</h3>
         <p>FiberTech</p>
-        <p>December 2024 - Present</p>
+        <p>December 2023 - Present</p>
       </div>
-	   <div class="card">
+      <div class="card">
         <h3>Freelance Web Security Developer and Analyst</h3>
         <p>Freelance</p>
-        <p>November 2024 - Present</p>
+        <p>November 2023 - Present</p>
       </div>
     </div>
   </section>
@@ -526,18 +484,35 @@ communication skills and the ability to thrive in high-pressure environments. </
   <section id="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:Qipher09@proton.me">Qipher09@proton.me</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/qais-alqaissi-1b9295238" target="_blank">Qais Alqaissi</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/qais-alqaissi-1b9295238" target="_blank" rel="noopener noreferrer">Qais Alqaissi</a></p>
   </section>
 
-   <footer>
+  <footer>
     <div class="badges">
-      <a href="https://www.credly.com/badges/728b9a3a-cfd9-477a-9bda-229ad00b4704/public_url"><img src="C/isc2-candidate.png" alt="ISC2 CC Badge"></a>
-      <a href="C/Blue Team Junior Analyst Pathway Bundle-btja.pdf"><img style="width:90%" src="C/BlueTeamBadge.png" alt="BTJA Badge"></a>
-      <a href="https://www.credly.com/badges/775e2d8b-e432-4d2d-9aed-3a346c63aa6d/public_url"><img src="C/introduction-to-the-threat-landscape-2-0.png" alt="Fortinet NSE Badge"></a>
-	  <a href="https://www.credly.com/badges/1f6e1da4-7ccd-42c5-9f7e-7d87ccba6c45/public_url"><img src="C/getting-started-in-cybersecurity-2-0.png" alt=""></a>
-	  <a href="https://www.credly.com/badges/083f90eb-7432-47bc-92a6-7c3d48f667ef/public_url"><img src="C/fortinet-certified-fundamentals-cybersecurity (1).png" alt=""></a>
+      <a href="https://www.credly.com/badges/728b9a3a-cfd9-477a-9bda-229ad00b4704/public_url" target="_blank" rel="noopener noreferrer">
+        <img src="C/isc2-candidate.png" alt="ISC2 Certified in Cybersecurity Badge">
+      </a>
+      <a href="C/Blue Team Junior Analyst Pathway Bundle-btja.pdf" target="_blank" rel="noopener noreferrer">
+        <img style="width:100%" src="C/BlueTeamBadge.png" alt="Security Blue Team Junior Analyst Badge">
+      </a>
+      <a href="https://www.credly.com/badges/775e2d8b-e432-4d2d-9aed-3a346c63aa6d/public_url" target="_blank" rel="noopener noreferrer">
+        <img src="C/introduction-to-the-threat-landscape-2-0.png" alt="Fortinet NSE Badge">
+      </a>
+      <a href="https://www.credly.com/badges/1f6e1da4-7ccd-42c5-9f7e-7d87ccba6c45/public_url" target="_blank" rel="noopener noreferrer">
+        <img src="C/getting-started-in-cybersecurity-2-0.png" alt="Fortinet Cybersecurity Fundamentals Badge">
+      </a>
+      <a href="https://www.credly.com/badges/083f90eb-7432-47bc-92a6-7c3d48f667ef/public_url" target="_blank" rel="noopener noreferrer">
+        <img src="C/fortinet-certified-fundamentals-cybersecurity (1).png" alt="Fortinet Certified Fundamentals Badge">
+      </a>
     </div>
-    <p>&copy; 2025 Qais M. Alqaissi. All Rights Reserved.</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/qais-alqaissi-1b9295238" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com/Cipher-Red" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+    <p>&copy; <span id="current-year"></span> Qais M. Alqaissi. All Rights Reserved.</p>
+    <script>
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
   </footer>
 </body>
 </html>

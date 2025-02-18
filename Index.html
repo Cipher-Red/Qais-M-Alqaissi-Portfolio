@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Qais Alqaissi's professional portfolio showcasing skills, certifications, and experience in cybersecurity.">
-  <meta property="og:title" content="Qais M. Alqaissi - Cybersecurity Portfolio">
-  <meta property="og:description" content="Aspiring Cybersecurity Specialist with hands-on experience in customer support and a strong academic foundation in Cybersecurity.">
-  <meta property="og:image" content="https://yourwebsite.com/path/to/image.jpg">
-  <meta property="og:url" content="https://yourwebsite.com">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Qais Alqaissi's professional portfolio showcasing skills, certifications, and experience in cybersecurity." />
+  <meta property="og:title" content="Qais M. Alqaissi - Cybersecurity Portfolio" />
+  <meta property="og:description" content="Aspiring Cybersecurity Specialist with hands-on experience in customer support and a strong academic foundation in Cybersecurity." />
+  <meta property="og:image" content="https://yourwebsite.com/path/to/image.jpg" />
+  <meta property="og:url" content="https://yourwebsite.com" />
   <title>Qais M. Alqaissi - Cybersecurity Portfolio</title>
   <style>
     * {
@@ -23,26 +23,23 @@
     body {
       font-family: Arial, sans-serif;
       background: linear-gradient(to right, #00FFFF, #FFC72C, #EF0107, #000000);
+      background-size: 400% 400%;
+      animation: waveAnimation 10s ease infinite;
       color: #FAFAFA;
       line-height: 1.6;
     }
-	body {
-  background: linear-gradient(to right, #00FFFF, #FFC72C, #EF0107, #000000);
-  background-size: 400% 400%;
-  animation: waveAnimation 10s ease infinite;
-}
 
-@keyframes waveAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
+    @keyframes waveAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
 
     header {
       background: rgba(0, 0, 0, 0.8);
@@ -74,7 +71,6 @@
 
     header nav a:hover {
       color: #00FFFF;
-      
     }
 
     section {
@@ -246,6 +242,50 @@
       }
     }
   </style>
+  <style>
+    /* Style for the toggle button */
+    #toggle-btn {
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: black;
+      color: white;
+      border: solid;
+	  border-color:#00FFFF;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+    #toggle-btn:hover {
+      background-color: #00FFFF;
+    }
+
+    /* Optional: remove extra card-like styling from container if needed */
+    .hidden {
+      /* You can leave this class to mark hidden elements; 
+         its properties will be overridden for #more-certificates below */
+    }
+
+    /* New styles for the additional certificates container */
+    #more-certificates {
+      display: none !important;
+    }
+    #more-certificates.show {
+      display: grid !important;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+    /* Responsive adjustments for the grid */
+    @media (max-width: 768px) {
+      #more-certificates.show {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 480px) {
+      #more-certificates.show {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -280,7 +320,10 @@
         <h3>Fortinet NSE 1 & NSE 2</h3>
         <a href="C/Fortinet_Certified_Fundamentals_in_Cybersecurity.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
       </div>
-      <div class="card">
+    </div>
+    <!-- Additional certificates container; note the use of "hidden" (for marking) -->
+    <div id="more-certificates" class="hidden" style="margin-top:17px">
+       <div class="card" >
         <h3>The Hope Cyber Security Fundamentals</h3>
         <a href="C/Qais Mohammad Alqaissi CSF.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
       </div>
@@ -409,6 +452,7 @@
         <a href="C/Fortinet_Certified_Fundamentals_in_Cybersecurity.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
       </div>
     </div>
+    <button id="toggle-btn">Show More</button>
   </section>
 
   <section id="research">
@@ -427,7 +471,47 @@
   <section id="cybersecurity-portfolio">
     <h2>Cybersecurity Portfolio</h2>
     <div class="cards">
+		<div class="card">
+        <h3>Caeruleum</h3>
+        <p>
+          Caeruleum is a lightweight, Python-based command-line tool for forensic analysis on Windows. It offers essential utilities like file recovery, malware scanning, system log collection, disk management, and network scanning. Designed for both novice and experienced users, it’s resource-efficient and compatible with low-resource systems.
+        </p>
+        <p>
+          Key features include deleted file recovery, forensic image generation, Windows Defender malware scans, and detailed system health reports. Open-source and licensed under Apache 2.0, Caeruleum is a versatile tool for forensic investigations and system analysis.
+        </p>
+        <a href="https://github.com/Cipher-Red/Caeruleum.git" target="_blank" rel="noopener noreferrer">Check Out The GitHub Repository</a>
+      </div>
       <div class="card">
+        <h3>Vigil</h3>
+        <p>
+          Vigil is a lightweight, open-source network traffic monitoring tool built in Python. It captures and analyzes live network traffic in real-time, offering features like protocol identification, IP/port filtering, DoS/DDoS detection, and payload inspection. Captured packets are saved in PCAP format for further analysis.
+        </p>
+        <p>
+          Designed for network administrators and security researchers, Vigil supports cross-platform use (Linux and Windows) and is licensed under Apache 2.0. Its intuitive interface and powerful capabilities make it ideal for monitoring, troubleshooting, and securing network environments.
+        </p>
+        <a href="https://github.com/Cipher-Red/vigil.git" target="_blank" rel="noopener noreferrer">Check Out The GitHub Repository</a>
+      </div>
+	<div class="card">
+    <h3>Aurum</h3>
+    <p>
+        Aurum is a lightweight, Python-based command-line tool for email security and validation. 
+        It helps individuals and organizations verify email addresses, check domain MX records, and detect blacklisted domains using multiple DNS-based blacklists (DNSBLs).
+    </p>
+    <p>
+        Key features include bulk email validation, custom blacklist support, MX record analysis, and automated PDF report generation. 
+        Cross-platform and open-source under Apache 2.0, Aurum is a reliable solution for improving email deliverability and security.
+    </p>
+    <a href="https://github.com/Cipher-Red/Aurum" target="_blank" rel="noopener noreferrer">Check Out The GitHub Repository</a>
+</div>
+
+
+    </div>
+  </section>
+  
+  <section id="website-portfolio">
+	<h2>Websites portfolio</h2>
+	<div class="cards">
+	 <div class="card">
         <h3>Ghaida Al Qaissi's Portfolio</h3>
         <p>
           A professional portfolio website created for a client, showcasing their work and skills in a visually appealing and functional design.
@@ -469,7 +553,7 @@
         </p>
         <a href="https://noorjaber.netlify.app" target="_blank" rel="noopener noreferrer">Explore the Website</a>
       </div>
-	  <div class="card">
+      <div class="card">
         <h3>Abdulaziz Al Qaissi's Portfolio</h3>
         <p>
           A professional portfolio website created for a client, showcasing their work and skills in a visually appealing and functional design.
@@ -482,24 +566,22 @@
         </p>
         <a href="https://abudlaziz.netlify.app" target="_blank" rel="noopener noreferrer">Explore the Website</a>
       </div>
-	   	   <div class="card"> <h3>Caeruleum</h3> <p> Caeruleum is a lightweight, Python-based command-line tool for forensic analysis on Windows. It offers essential utilities like file recovery, malware scanning, system log collection, disk management, and network scanning. Designed for both novice and experienced users, it’s resource-efficient and compatible with low-resource systems. </p> <p> Key features include deleted file recovery, forensic image generation, Windows Defender malware scans, and detailed system health reports. Open-source and licensed under Apache 2.0, Caeruleum is a versatile tool for forensic investigations and system analysis. </p> <a href="https://github.com/Cipher-Red/Caeruleum.git" target="_blank" rel="noopener noreferrer">Check Out The GitHub Repository</a> </div>
-			<div class="card"> <h3>Vigil</h3> <p> Vigil is a lightweight, open-source network traffic monitoring tool built in Python. It captures and analyzes live network traffic in real-time, offering features like protocol identification, IP/port filtering, DoS/DDoS detection, and payload inspection. Captured packets are saved in PCAP format for further analysis. </p> <p> Designed for network administrators and security researchers, Vigil supports cross-platform use (Linux and Windows) and is licensed under Apache 2.0. Its intuitive interface and powerful capabilities make it ideal for monitoring, troubleshooting, and securing network environments. </p> <a href="https://github.com/Cipher-Red/vigil.git" target="_blank" rel="noopener noreferrer">Check Out The GitHub Repository</a> </div>
+  
 	
-	</div>
 	
   </section>
 
-<section id="experience">
-  <h2>Education</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>Amman Arab University</h3>
-      <p><strong>Bachelor of Science in Cybersecurity</strong></p>
-      <p><em>2021 – Present</em></p>
-      <p><strong>GPA:</strong> 3.8/4.0</p>
+  <section id="experience">
+    <h2>Education</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Amman Arab University</h3>
+        <p><strong>Bachelor of Science in Cybersecurity</strong></p>
+        <p><em>2021 – Present</em></p>
+        <p><strong>GPA:</strong> 3.8/4.0</p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <section id="experience">
     <h2>Experience</h2>
@@ -536,19 +618,19 @@
   <footer>
     <div class="badges">
       <a href="https://www.credly.com/badges/728b9a3a-cfd9-477a-9bda-229ad00b4704/public_url" target="_blank" rel="noopener noreferrer">
-        <img src="C/isc2-candidate.png" alt="ISC2 Certified in Cybersecurity Badge">
+        <img src="C/isc2-candidate.png" alt="ISC2 Certified in Cybersecurity Badge" />
       </a>
       <a href="C/Blue Team Junior Analyst Pathway Bundle-btja.pdf" target="_blank" rel="noopener noreferrer">
-        <img style="width:100%" src="C/BlueTeamBadge.png" alt="Security Blue Team Junior Analyst Badge">
+        <img style="width:100%" src="C/BlueTeamBadge.png" alt="Security Blue Team Junior Analyst Badge" />
       </a>
       <a href="https://www.credly.com/badges/775e2d8b-e432-4d2d-9aed-3a346c63aa6d/public_url" target="_blank" rel="noopener noreferrer">
-        <img src="C/introduction-to-the-threat-landscape-2-0.png" alt="Fortinet NSE Badge">
+        <img src="C/introduction-to-the-threat-landscape-2-0.png" alt="Fortinet NSE Badge" />
       </a>
       <a href="https://www.credly.com/badges/1f6e1da4-7ccd-42c5-9f7e-7d87ccba6c45/public_url" target="_blank" rel="noopener noreferrer">
-        <img src="C/getting-started-in-cybersecurity-2-0.png" alt="Fortinet Cybersecurity Fundamentals Badge">
+        <img src="C/getting-started-in-cybersecurity-2-0.png" alt="Fortinet Cybersecurity Fundamentals Badge" />
       </a>
       <a href="https://www.credly.com/badges/083f90eb-7432-47bc-92a6-7c3d48f667ef/public_url" target="_blank" rel="noopener noreferrer">
-        <img src="C/fortinet-certified-fundamentals-cybersecurity (1).png" alt="Fortinet Certified Fundamentals Badge">
+        <img src="C/fortinet-certified-fundamentals-cybersecurity (1).png" alt="Fortinet Certified Fundamentals Badge" />
       </a>
     </div>
     <div class="social-links">
@@ -558,6 +640,19 @@
     <p>&copy; <span id="current-year"></span> Qais M. Alqaissi. All Rights Reserved.</p>
     <script>
       document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    <script>
+      // Toggle the additional certificates with grid layout (3 columns on larger screens)
+      document.getElementById("toggle-btn").addEventListener("click", function() {
+        var moreCertificates = document.getElementById("more-certificates");
+        if (moreCertificates.classList.contains("show")) {
+          moreCertificates.classList.remove("show");
+          this.textContent = "Show More";
+        } else {
+          moreCertificates.classList.add("show");
+          this.textContent = "Show Less";
+        }
+      });
     </script>
   </footer>
 </body>
